@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "p55CntIXeBasAm7grdM8D1ooAgyD5IPuEwdoFCOPJiFgc+1LqGLp+FRrMZpEF7Ggd+H1KsbNDLohFEJgApS18Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\przes\\source\\repos\\MetricsExample\\MetricsExample\\MetricsExample.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\przes\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512",
+    "C:\\Users\\przes\\.nuget\\packages\\prometheus-net\\3.6.0\\prometheus-net.3.6.0.nupkg.sha512",
+    "C:\\Users\\przes\\.nuget\\packages\\prometheus-net.aspnetcore\\3.6.0\\prometheus-net.aspnetcore.3.6.0.nupkg.sha512",
+    "C:\\Users\\przes\\.nuget\\packages\\prometheus-net.aspnetcore.healthchecks\\3.6.0\\prometheus-net.aspnetcore.healthchecks.3.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}

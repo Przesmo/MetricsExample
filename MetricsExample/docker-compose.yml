@@ -1,0 +1,44 @@
+version: '3'
+
+services: 
+    metricsexample:
+        image: metricsexample
+        ports:
+            - 8082:8080
+        environment:
+            - ASPNETCORE_ENVIRONMENT=Development
+            - ASPNETCORE_URLS=http://*:8080
+        networks:
+            - dotnetcorepromgrafana
+
+    prometheus:
+        image: prom/prometheus
+        restart: always
+        ports:
+            - 9090:9090
+        volumes:
+            - ./prometheus.yml:/etc/prometheus/prometheus.yml:ro
+        networks:
+            - dotnetcorepromgrafana
+    
+    grafana: 
+        image: grafana/grafana
+    #command:
+        environment:
+            - GF_SECURITY_ADMIN_PASSWORD=P@ssw0rd
+        restart: always
+        ports:
+            - 3000:3000
+        networks:
+            - dotnetcorepromgrafana
+    nodeexporter:
+        image: prom/node-exporter
+        ports: 
+            - 8083:9100
+        restart: always
+        networks:
+            - dotnetcorepromgrafana
+    
+
+networks:
+    dotnetcorepromgrafana:
